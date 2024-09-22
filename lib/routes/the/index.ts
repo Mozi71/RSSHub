@@ -9,6 +9,7 @@ import { art } from '@/utils/render';
 import path from 'node:path';
 
 import { apiSlug, bakeFilterSearchParams, bakeFiltersWithPair, bakeUrl, fetchData, getFilterParamsForUrl, parseFilterStr } from './util';
+import timezone from '@/utils/timezone';
 
 export const handler = async (ctx) => {
     const { filter } = ctx.req.param();
@@ -23,6 +24,7 @@ export const handler = async (ctx) => {
 
     apiSearchParams.append('_embed', 'true');
     apiSearchParams.append('per_page', String(limit));
+    apiSearchParams.append('page', '1');
 
     const apiUrl = bakeUrl(`${apiSlug}/posts`, rootUrl, apiSearchParams);
     const currentUrl = bakeUrl(getFilterParamsForUrl(filtersWithPair) ?? '', rootUrl, searchParams);
@@ -77,7 +79,8 @@ export const handler = async (ctx) => {
         return {
             title: item.title?.rendered ?? item.title ?? title,
             description,
-            pubDate: parseDate(item.date_gmt),
+            pubDate: timezone(parseDate(item.date_gmt), 0),
+            updated: timezone(parseDate(item.modified_gmt), 0),
             link: item.link,
             category: [...new Set(terminologies.flat().map((c) => c.name))],
             author: item._embedded.author.map((a) => a.name).join('/'),
@@ -87,7 +90,6 @@ export const handler = async (ctx) => {
                 html: description,
                 text: $$.text(),
             },
-            updated: parseDate(item.modified_gmt),
         };
     });
 
