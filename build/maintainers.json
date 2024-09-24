@@ -1884,6 +1884,9 @@
   "/dxy/bbs/profile/thread/:userId": [
     "TonyRL"
   ],
+  "/dykszx/news/:newsType?": [
+    "zytomorrow"
+  ],
   "/e-hentai/:what?/:id?/:needTorrents?/:needImages?": [],
   "/eagle/blog/:cate?/:language?": [
     "Fatpandac"
@@ -4296,6 +4299,9 @@
   ],
   "/niaogebiji/today": [
     "KotoriK"
+  ],
+  "/nicovideo/user/:id/video/:embed?": [
+    "TonyRL"
   ],
   "/nifd/research/:categoryGuid?": [
     "Fatpandac"
