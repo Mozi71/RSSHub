@@ -3966,10 +3966,89 @@
         "title": "Category",
         "docs": "https://docs.rsshub.app/routes/multimedia",
         "source": [
-          "/:category",
+          "/category/:keyword"
+        ],
+        "target": "/chikubi/category/:keyword"
+      },
+      {
+        "title": "最新記事",
+        "docs": "https://docs.rsshub.app/routes/multimedia",
+        "source": [
           "/"
         ],
-        "target": "/chikubi/:category"
+        "target": "/chikubi/"
+      },
+      {
+        "title": "殿堂",
+        "docs": "https://docs.rsshub.app/routes/multimedia",
+        "source": [
+          "/best-nipple-article"
+        ],
+        "target": "/chikubi/best"
+      },
+      {
+        "title": "動畫",
+        "docs": "https://docs.rsshub.app/routes/multimedia",
+        "source": [
+          "/nipple-video"
+        ],
+        "target": "/chikubi/video"
+      },
+      {
+        "title": "VR",
+        "docs": "https://docs.rsshub.app/routes/multimedia",
+        "source": [
+          "/nipple-video-category/cat-nipple-video-vr"
+        ],
+        "target": "/chikubi/vr"
+      },
+      {
+        "title": "漫畫",
+        "docs": "https://docs.rsshub.app/routes/multimedia",
+        "source": [
+          "/comic"
+        ],
+        "target": "/chikubi/comic"
+      },
+      {
+        "title": "音聲",
+        "docs": "https://docs.rsshub.app/routes/multimedia",
+        "source": [
+          "/voice"
+        ],
+        "target": "/chikubi/voice"
+      },
+      {
+        "title": "CG・イラスト",
+        "docs": "https://docs.rsshub.app/routes/multimedia",
+        "source": [
+          "/cg"
+        ],
+        "target": "/chikubi/cg"
+      },
+      {
+        "title": "動画カテゴリー",
+        "docs": "https://docs.rsshub.app/routes/multimedia",
+        "source": [
+          "/nipple-video-category/:keyword"
+        ],
+        "target": "/chikubi/nipple-video-category/:keyword"
+      },
+      {
+        "title": "AVメーカー",
+        "docs": "https://docs.rsshub.app/routes/multimedia",
+        "source": [
+          "/nipple-video-maker/:keyword"
+        ],
+        "target": "/chikubi/nipple-video-maker/:keyword"
+      },
+      {
+        "title": "Tag",
+        "docs": "https://docs.rsshub.app/routes/multimedia",
+        "source": [
+          "/tag/:keyword"
+        ],
+        "target": "/chikubi/tag/:keyword"
       }
     ]
   },
@@ -5163,6 +5242,27 @@
       }
     ]
   },
+  "dealstreetasia.com": {
+    "_name": "DealStreetAsia",
+    ".": [
+      {
+        "title": "Home",
+        "docs": "https://docs.rsshub.app/routes/traditional-media",
+        "source": [
+          "/"
+        ],
+        "target": "/dealstreetasia/home"
+      },
+      {
+        "title": "Section",
+        "docs": "https://docs.rsshub.app/routes/traditional-media",
+        "source": [
+          "/"
+        ],
+        "target": "/dealstreetasia/section/:section"
+      }
+    ]
+  },
   "dedao.cn": {
     "_name": "得到",
     ".": [
@@ -5201,6 +5301,14 @@
           "/user/:user_id"
         ],
         "target": "/deepin/homepage/:user_id"
+      },
+      {
+        "title": "首页主题列表",
+        "docs": "https://docs.rsshub.app/routes/bbs",
+        "source": [
+          "/"
+        ],
+        "target": "/deepin/threads/latest"
       }
     ]
   },
@@ -5782,7 +5890,7 @@
     "cn": [
       {
         "title": "Blog",
-        "docs": "https://docs.rsshub.app/routes/design",
+        "docs": "https://docs.rsshub.app/routes/blog",
         "source": [
           "/blog"
         ],
@@ -6897,6 +7005,14 @@
   "gamer.com.tw": {
     "_name": "巴哈姆特電玩資訊站",
     "ani": [
+      {
+        "title": "動畫瘋 - 動畫",
+        "docs": "https://docs.rsshub.app/routes/anime",
+        "source": [
+          "/"
+        ],
+        "target": "/gamer/anime/:sn"
+      },
       {
         "title": "動畫瘋 - 最後更新",
         "docs": "https://docs.rsshub.app/routes/anime",
@@ -8095,7 +8211,67 @@
         "source": [
           "/"
         ],
-        "target": "/gov/moa/:suburl"
+        "target": "/gov/moa/suburl/:suburl"
+      }
+    ],
+    "www": [
+      {
+        "title": "中华人民共和国农业农村部生猪专题重要政策",
+        "docs": "https://docs.rsshub.app/routes/government",
+        "source": [
+          "/ztzl/szcpxx/zyzc/index.htm"
+        ],
+        "target": "/gov/moa/szcpxx"
+      }
+    ],
+    "zdscxx": [
+      {
+        "title": "价格指数",
+        "docs": "https://docs.rsshub.app/routes/government",
+        "source": [
+          "/nyb/pc/messageList.jsp"
+        ],
+        "target": "/gov/gov/moa/zdscxx/价格指数"
+      },
+      {
+        "title": "供需形势",
+        "docs": "https://docs.rsshub.app/routes/government",
+        "source": [
+          "/nyb/pc/messageList.jsp"
+        ],
+        "target": "/gov/gov/moa/zdscxx/供需形势"
+      },
+      {
+        "title": "分析报告周报",
+        "docs": "https://docs.rsshub.app/routes/government",
+        "source": [
+          "/nyb/pc/messageList.jsp"
+        ],
+        "target": "/gov/gov/moa/zdscxx/分析报告周报"
+      },
+      {
+        "title": "分析报告日报",
+        "docs": "https://docs.rsshub.app/routes/government",
+        "source": [
+          "/nyb/pc/messageList.jsp"
+        ],
+        "target": "/gov/gov/moa/zdscxx/分析报告日报"
+      },
+      {
+        "title": "日历信息",
+        "docs": "https://docs.rsshub.app/routes/government",
+        "source": [
+          "/nyb/pc/messageList.jsp"
+        ],
+        "target": "/gov/gov/moa/zdscxx/日历信息"
+      },
+      {
+        "title": "蔬菜生产",
+        "docs": "https://docs.rsshub.app/routes/government",
+        "source": [
+          "/nyb/pc/messageList.jsp"
+        ],
+        "target": "/gov/gov/moa/zdscxx/蔬菜生产"
       }
     ]
   },
@@ -9510,7 +9686,7 @@
     "_name": "Hacker News",
     "news": [
       {
-        "title": "用户",
+        "title": "User",
         "docs": "https://docs.rsshub.app/routes/programming",
         "source": [
           "/:section",
@@ -11490,6 +11666,29 @@
       }
     ]
   },
+  "javtiful.com": {
+    "_name": "Javtiful",
+    ".": [
+      {
+        "title": "Actress",
+        "docs": "https://docs.rsshub.app/routes/multimedia",
+        "source": [
+          "/actress/:id",
+          "/actress/:id/*"
+        ],
+        "target": "/javtiful/actress/:id"
+      },
+      {
+        "title": "Channel",
+        "docs": "https://docs.rsshub.app/routes/multimedia",
+        "source": [
+          "/channel/:id",
+          "/channel/:id/*"
+        ],
+        "target": "/javtiful/channel/:id"
+      }
+    ]
+  },
   "jianshu.com": {
     "_name": "简书",
     "www": [
@@ -12060,6 +12259,19 @@
       }
     ]
   },
+  "konachan.com": {
+    "_name": "Konachan.com Anime Wallpapers",
+    ".": [
+      {
+        "title": "Popular Recent Posts",
+        "docs": "https://docs.rsshub.app/routes/picture",
+        "source": [
+          "/post"
+        ],
+        "target": "/konachan/post/popular_recent/:period?"
+      }
+    ]
+  },
   "konghq.com": {
     "_name": "Kong API 网关平台",
     ".": [
@@ -12610,14 +12822,14 @@
     ]
   },
   "lovelive-anime.jp": {
-    "_name": "lovelive-anime",
+    "_name": "Love Live! Official Website",
     "www": [
       {
-        "title": "Love Live! Official Website Latest NEWS",
+        "title": "News",
         "docs": "https://docs.rsshub.app/routes/anime",
         "source": [
           "/",
-          "/news"
+          "/news/"
         ],
         "target": "/lovelive-anime/news"
       }
@@ -15909,13 +16121,21 @@
     "_name": "国家地理",
     ".": [
       {
-        "title": "每日一图",
+        "title": "Daily Photo",
         "docs": "https://docs.rsshub.app/routes/picture",
         "source": [
           "/photo-of-the-day/*",
           "/"
         ],
         "target": "/natgeo/dailyphoto"
+      },
+      {
+        "title": "Daily Selection",
+        "docs": "https://docs.rsshub.app/routes/picture",
+        "source": [
+          "/"
+        ],
+        "target": "/natgeo/dailyselection"
       }
     ],
     "www": [
@@ -16354,6 +16574,45 @@
       }
     ]
   },
+  "ncku.edu.tw": {
+    "_name": "National Cheng Kung University",
+    "www.csie": [
+      {
+        "title": "CSIE News",
+        "docs": "https://docs.rsshub.app/routes/university",
+        "source": [
+          "/zh-hant/news/"
+        ],
+        "target": "/ncku/csie/_all"
+      },
+      {
+        "title": "CSIE News",
+        "docs": "https://docs.rsshub.app/routes/university",
+        "source": [
+          "/zh-hant/news/:catagory"
+        ],
+        "target": "/ncku/csie/:catagory"
+      }
+    ],
+    "phys": [
+      {
+        "title": "Phys News",
+        "docs": "https://docs.rsshub.app/routes/university",
+        "source": [
+          "/news/"
+        ],
+        "target": "/ncku/phys/_all"
+      },
+      {
+        "title": "Phys News",
+        "docs": "https://docs.rsshub.app/routes/university",
+        "source": [
+          "/news/:catagory/"
+        ],
+        "target": "/ncku/phys/:catagory"
+      }
+    ]
+  },
   "ncpssd.cn": {
     "_name": "国家哲学社会科学文献中心",
     ".": [
@@ -16633,7 +16892,7 @@
     "_name": "New Yorker",
     ".": [
       {
-        "title": "The New Yorker",
+        "title": "Articles",
         "docs": "https://docs.rsshub.app/routes/traditional-media",
         "source": [
           "/:category"
@@ -17458,6 +17717,19 @@
           "/"
         ],
         "target": "/nytimes/:lang?"
+      }
+    ]
+  },
+  "obsidian.md": {
+    "_name": "Obsidian",
+    "publish": [
+      {
+        "title": "Publish",
+        "docs": "https://docs.rsshub.app/routes/blog",
+        "source": [
+          "/"
+        ],
+        "target": "/obsidian/publish/:id"
       }
     ]
   },
@@ -20830,6 +21102,20 @@
       }
     ]
   },
+  "spankbang.com": {
+    "_name": "SpankBang",
+    ".": [
+      {
+        "title": "New Porn Videos",
+        "docs": "https://docs.rsshub.app/routes/multimedia",
+        "source": [
+          "/new_videos/",
+          "/"
+        ],
+        "target": "/spankbang/new_videos"
+      }
+    ]
+  },
   "spotify.com": {
     "_name": "Spotify",
     "open": [
@@ -23307,6 +23593,16 @@
         "target": "/uestc/auto"
       }
     ],
+    "bbs": [
+      {
+        "title": "清水河畔",
+        "docs": "https://docs.rsshub.app/routes/university",
+        "source": [
+          "/*"
+        ],
+        "target": "/uestc/bbs/newthread"
+      }
+    ],
     "cqe": [
       {
         "title": "文化素质教育中心",
@@ -23807,6 +24103,76 @@
           "/"
         ],
         "target": "/vom/featured/:lang"
+      }
+    ]
+  },
+  "voronoiapp.com": {
+    "_name": "Voronoi",
+    "www": [
+      {
+        "title": "Author Posts",
+        "docs": "https://docs.rsshub.app/routes/picture",
+        "source": [
+          "/author/:username"
+        ],
+        "target": "/voronoiapp/author/:username"
+      },
+      {
+        "title": "Editor's Pick Posts",
+        "docs": "https://docs.rsshub.app/routes/picture",
+        "source": [
+          "/posts/editors-pick"
+        ],
+        "target": "/voronoiapp/editors-pick"
+      },
+      {
+        "title": "Home Posts",
+        "docs": "https://docs.rsshub.app/routes/picture",
+        "source": [
+          "/",
+          "/posts/voronoi"
+        ],
+        "target": "/voronoiapp/home"
+      },
+      {
+        "title": "Latest Posts",
+        "docs": "https://docs.rsshub.app/routes/picture",
+        "source": [
+          "/posts/latest"
+        ],
+        "target": "/voronoiapp/latest"
+      },
+      {
+        "title": "Most Liked Posts",
+        "docs": "https://docs.rsshub.app/routes/picture",
+        "source": [
+          "/posts/most-popular"
+        ],
+        "target": "/voronoiapp/popular/most-popular"
+      },
+      {
+        "title": "Most Discussed Posts",
+        "docs": "https://docs.rsshub.app/routes/picture",
+        "source": [
+          "/posts/most-discussed"
+        ],
+        "target": "/voronoiapp/popular/most-discussed"
+      },
+      {
+        "title": "Most Viewed Posts",
+        "docs": "https://docs.rsshub.app/routes/picture",
+        "source": [
+          "/posts/most-viewed"
+        ],
+        "target": "/voronoiapp/popular/most-viewed"
+      },
+      {
+        "title": "Search Keyword Posts",
+        "docs": "https://docs.rsshub.app/routes/picture",
+        "source": [
+          "/explore"
+        ],
+        "target": "/voronoiapp(_,url)=>{const parsedURL=new URL(url);const keyword=parsedURL.searchParams.get(\"search\");return`/voronoiapp/search/${keyword}`}"
       }
     ]
   },
@@ -24739,13 +25105,13 @@
     ]
   },
   "yande.re": {
-    "_name": "yande",
+    "_name": "yande.re",
     ".": [
       {
-        "title": "posts",
-        "docs": "https://docs.rsshub.app/routes/anime",
+        "title": "Popular Recent Posts",
+        "docs": "https://docs.rsshub.app/routes/picture",
         "source": [
-          "/post/"
+          "/post"
         ],
         "target": "/yande/post/popular_recent/:period?"
       }
